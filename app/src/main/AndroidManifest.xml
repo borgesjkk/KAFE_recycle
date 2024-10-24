@@ -13,8 +13,11 @@
         android:theme="@style/Theme.KAFE"
         tools:targetApi="31">
         <activity
+            android:name=".molde"
+            android:exported="false" />
+        <activity
             android:name=".base_gym"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,8 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
