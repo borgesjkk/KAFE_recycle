@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base_gym"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    android:background="#2c2c2c"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:background="@color/white"
+        android:fontFamily="@font/arima_wght"
+        android:text="Menu principal"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="90dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menuBike"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="10sp"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/acad"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/arima_wght"
+                    android:text="GYM"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
